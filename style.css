@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+}
+
+@media screen and (min-width: 600px) {  
+  .box {
+    width: 80% !important;
+    border-radius: 20px;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+  }
+}
+
+input {
+  border: 0px;
+  border-bottom: 1px solid;
+}
+
+textarea:focus, input:focus{
+  outline: none;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
